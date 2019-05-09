@@ -2,248 +2,308 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/fixed.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/fixed.css" />
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
+  <!-----------Home---------->
+  <div id="home">
+    <!------Nav------->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Tatenda Kwaramba</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#personal" class="nav-link">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!------End nav------->
 
-	<!-----------Home---------->
-	<div id="home">
-		<!------Nav------->
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<a class="navbar-brand" href="#">Tatenda Kwaramba</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="#home" class="nav-link">Home</a>
-					</li>
-					<li class="nav-item">
-						<a href="#personal" class="nav-link">Academics</a>
-					</li>
-					<li class="nav-item">
-						<a href="#skills" class="nav-link">Skills</a>
-					</li>
-					<li class="nav-item">
-						<a href="#projects" class="nav-link">Projects</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!------End nav------->
+    <!------Start Landing Page------->
+    <div class="landing">
+      <div class="home-wrap">
+        <div class="home-inner"></div>
+      </div>
+    </div>
 
-		<!------Start Landing Page------->
-		<div class="landing">
-			<div class="home-wrap">
-				<div class="home-inner">
+    <div class="caption text-center">
+      <h1>Hi I am Tatenda</h1>
+      <h3>Software Developer</h3>
+      <p class="lead" id="caption-text">Software development intrigues everything
+        about me, so if
+        you are
+        looking for a developer you have found the right guy. This is my portifolio,
+        feel free to navigate.
+      </p>
+      <a class="btn btn-outline-dark btn-lg" href="#personal">About Me</a>
+    </div>
+    <!------End page------->
+  </div>
+  <!-----------End Home---------->
 
-				</div>
-			</div>
-		</div>
+  <!-----------Personal Details---------->
+  <div id="personal" class="offset container-fluid row">
+    <div class="col-md-5" id="personal-img"></div>
+    <div class="col-md-6 text-center">
+      <div class="about">
+        <h4>Contact</h4>
+        <p class="lead">0779 070 941 or 0719 070 941</p>
+        <p class="lead">kwarambaandy@gmail.com</p>
+        <h4>Address</h4>
+        <p class="lead">Budiriro 5A Save Crescent 10603, Harare</p>
+      </div>
+      <div class="school">
+        <h3 id="heading">Harare Institute of Technology</h3>
+        <p>
+          I am currently studying Computer Science at Harare Institute of
+          Technology year two. Beginning of June this year I will be starting
+          my attachment year (part three).
+        </p>
+      </div>
+      <div class="rel-skills">
+        <h3 id="heading">Relevant skills</h3>
+        <p>
+          Currently working on two projects Automated Admissions System (AAS)
+          and Harare Flee Market E-commerce (HFME). I am implementing AAS java
+          and MySQL, as for HFME I am using PHP Laravel to create its REST API
+          service.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-----------End---------->
 
-		<div class="caption text-center">
-			<h1>Hi I am Tatenda</h1>
-			<h3>Software Developer</h3>
-			<a class="btn btn-outline-dark btn-lg" href="#personal">Learn More</a>
-		</div>
-		<!------End page------->
-	</div>
-	<!-----------End Home---------->
+  <!-----------Relevant Skilss---------->
+  <div id="skills" class="offset">
+    <div class="jumbotron text-center">
+      <div class="narrow">
+        <div class="col-12">
+          <h3 class="heading">Technologies Learned</h3>
+          <div class="heading-underline" style="width:25%; margin: auto;">
+            <hr class="" style="border: solid .1rem;" />
+          </div>
+        </div>
+        <div class="d-flex align-content-stretch flex-wrap justify-content-center">
+          <div class="item">
+            <i class="devicon-cplusplus-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 65%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                65%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 65%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                65%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-c-plain colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                50%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                80%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-heroku-original-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                20%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-github-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                20%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-java-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                70%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-javascript-plain colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                60%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-laravel-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                50%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                20%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-mysql-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                50%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-nodejs-plain colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                60%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-php-plain colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                40%
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <i class="devicon-python-plain-wordmark colored"></i>
+            <div class="progress m-2 bg-dark">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                50%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------End---------->
 
-	<!-----------Personal Details---------->
-	<div id="personal" class="offset container-fluid row">
-		<div class="col-md-5" id="personal-img">
+  <!-----------Projects---------->
+  <div id="projects" class="offset container mb-2">
+    <div class="container text-center">
+      <h3>Projects</h3>
+    </div>
+    <div class="card-deck">
+      <div class="card shadow-lg p-3 mb-5 mt-2 bg-white rounded">
+        <img src="img/Admissions-320x8151.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Automated Admissions System</h5>
+          <p class="card-text">
+            I designed this sytem to automate student shortlisting process for
+            institutes that usually have to deal with large numbers of
+            applications
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">gyomblackman2 or TatendaKwaramba on github</small>
+        </div>
+      </div>
+      <div class="card shadow-lg p-3 mb-5 mt-2 bg-white rounded">
+        <img src="img/Document1.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Official Mobile App Website</h5>
+          <p class="card-text">
+            I designed this website to help users to download mobile apps over
+            the website as an alternative to google-play or play-store
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">gyomblackman2 or TatendaKwaramba on github</small>
+        </div>
+      </div>
+      <div class="card shadow-lg p-3 mb-5 mt-2 bg-white rounded">
+        <img src="img/apple.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Harare Flee Market Platform</h5>
+          <p class="card-text">
+            Buying and selling of goods has become the common way of survival
+            in Zimbabwe. The more the options one has the more stressful a
+            decision becomes, thus I am designing a system help eliviate this
+            problem.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">gyomblackman2 or TatendaKwaramba on github</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------End---------->
 
-		</div>
-		<div class="col-md-6 text-center">
-			<div class="about">
-				<h4>Contact</h4>
-				<p class="lead">0779 070 941 or 0719 070 941</p>
-				<p class="lead">kwarambaand@gmail.com</p>
-				<h4>Address</h4>
-				<p class="lead">Budiriro 5A Save Crescent 10603, Harare</p>
-			</div>
-			<div class="school">
-				<h3 id="heading">Harare Institute of Technology</h3>
-				<p>I am currently studying Computer Science at Harare Institute of Technology year two. Beginning of June
-					this year I will be starting my attachment year (part three).</p>
-			</div>
-			<div class="rel-skills">
-				<h3 id="heading">Relevant skills</h3>
-				<p>Currently working on two projects Automated Admissions System (AAS) and Harare Flee Market E-commerce
-					(HFME). I am implementing AAS java and MySQL, as for HFME I am using PHP Laravel to create its REST API
-					service.</p>
-			</div>
-		</div>
-	</div>
-	<!-----------End---------->
-
-
-	<!-----------Relevant Skilss---------->
-	<div id="skills" class="offset">
-		<div class="jumbotron text-center">
-			<div class="narrow">
-				<div class="col-12">
-					<h3 class="heading">Technologies Learned</h3>
-					<div class="heading-underline" style="width:25%; margin: auto;">
-						<hr class="" style="border: solid .1rem;">
-					</div>
-				</div>
-				<div class="d-flex align-content-stretch flex-wrap justify-content-center">
-					<div class="item"><i class="devicon-bootstrap-plain-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 65%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">65%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-c-plain colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">50%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-html5-plain-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">80%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-heroku-original-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">20%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-github-plain-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">20%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-java-plain-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 70%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">70%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-javascript-plain colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">60%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-laravel-plain-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">50%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-mongodb-plain-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 20%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">20%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-mysql-plain-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">50%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-nodejs-plain colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">60%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-php-plain colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 40%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">40%</div>
-						</div>
-					</div>
-					<div class="item"><i class="devicon-python-plain-wordmark colored"></i>
-						<div class="progress m-2 bg-dark">
-							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-							 aria-valuemin="0" aria-valuemax="100">50%</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-----------End---------->
-
-	<!-----------Projects---------->
-	<div id="projects" class="offset container mb-2">
-		<div class="card-deck">
-			<div class="card shadow-lg p-3 mb-5 mt-2 bg-white rounded">
-				<img src="img/Admissions-320x8151.jpg" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Automated Admissions System</h5>
-					<p class="card-text">I designed this sytem to automate student shortlisting process
-						for institutes that usually have to deal with large numbers of applications
-					</p>
-				</div>
-				<div class="card-footer">
-					<small class="text-muted">Last updated 3 mins ago</small>
-				</div>
-			</div>
-			<div class="card shadow-lg p-3 mb-5 mt-2 bg-white rounded">
-				<img src="img/Document1.png" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Official Mobile App Website</h5>
-					<p class="card-text">I designed this website to help users to download mobile apps over
-						the website as an alternative to google-play or play-store
-					</p>
-				</div>
-				<div class="card-footer">
-					<small class="text-muted">Last updated 3 mins ago</small>
-				</div>
-			</div>
-			<div class="card shadow-lg p-3 mb-5 mt-2 bg-white rounded">
-				<img src="img/apple.png" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Harare Flee Market Platform</h5>
-					<p class="card-text">Buying and selling of goods has become the common way of survival in Zimbabwe.
-						The more the options one has the more stressful a decision becomes, thus I am designing a system
-						help eliviate this problem.
-					</p>
-				</div>
-				<div class="card-footer">
-					<small class="text-muted">Last updated 3 mins ago</small>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-----------End---------->
-
-
-	<!-----------Contact---------->
-	<div id="contact" class="offset">
-		<div class="footer fixed-bottom d-flex justify-content-center">
-			<a href="https://www.facebook.com/" class="mr-3 con"><i class="fab fa-facebook-f"></i></a>
-			<a href="#" class="mr-3 con"><i class="fas fa-envelope"></i></a>
-			<a href="https://twitter.com/TatendaKwaramb6" class="mr-3 con"><i class="fab fa-twitter"></i></a>
-			<a href="https://www.instagram.com/tatee84" class="mr-3 con"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.linkedin.com/feed/" class="mr-3 con"><i class="fab fa-linkedin-in"></i></a>
-		</div>
-	</div>
-	<!-----------End---------->
-	<!--- Script Source Files -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-	<!--- End of Script Source Files -->
-
+  <!-----------Contact---------->
+  <div id="contact" class="offset">
+    <div class="footer fixed-bottom d-flex justify-content-center">
+      <a href="https://www.facebook.com/" class="mr-3 con"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="mr-3 con"><i class="fas fa-envelope"></i></a>
+      <a href="https://twitter.com/TatendaKwaramb6" class="mr-3 con"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/tatee84" class="mr-3 con"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/feed/" class="mr-3 con"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+  <!-----------End---------->
+  <!--- Script Source Files -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+  <!--- End of Script Source Files -->
 </body>
 
 </html>

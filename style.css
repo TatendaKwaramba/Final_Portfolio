@@ -30,15 +30,15 @@ body {
 
 /*============ Landing page */
 .home-inner {
-  background-image: url(img/sarah-dorweiler-127187-unsplash.jpg);
+  background-image: url(img/brandi-redd-122054-unsplash-sm.jpg);
 }
 
 .caption {
   width: 100%;
   max-width: 100%;
   position: absolute;
-  top: 50%;
-  right: 20%;
+  top: 45%;
+  right: 15%;
   z-index: 1;
   color: black;
 }
@@ -54,6 +54,12 @@ body {
   font-size: 2rem;
   text-shadow: 0.1rem 0.1rem 0.5rem black;
   padding-bottom: 1.6rem;
+}
+
+#caption-text {
+  max-width: 60%;
+  margin: auto;
+  padding: 10px;
 }
 
 .btn-lg {
@@ -89,6 +95,13 @@ body {
 
 .footer a:hover {
   color: white;
+}
+
+/*Small (sm) devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+  body {
+    font-size: 0.8rem !important;
+  }
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
