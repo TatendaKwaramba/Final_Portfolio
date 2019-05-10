@@ -63,7 +63,6 @@ body {
 }
 
 .btn-lg {
-  border-width: medium;
   padding: 0.6rem 1.3rem;
   font-size: 1.1rem;
 }
@@ -84,6 +83,11 @@ body {
   font-size: 9rem;
 }
 
+.heading-underline {
+  height: 0.2rem;
+  background: #505962;
+}
+
 .footer {
   font-size: 2rem;
   background: rgba(0, 0, 0, 0.4);
@@ -95,6 +99,21 @@ body {
 
 .footer a:hover {
   color: white;
+}
+
+#cisco {
+  min-height: 300px;
+  background-image: url(img/brandi-redd-122054-unsplash-sm.jpg);
+  z-index: -1;
+}
+
+#cisco-img {
+  background-image: url(img/iconfinder_cisco_294687.png);
+}
+
+#highlight {
+  color: #1ebba3;
+  font-weight: bold;
 }
 
 /*Small (sm) devices (landscape phones, 576px and up)*/
